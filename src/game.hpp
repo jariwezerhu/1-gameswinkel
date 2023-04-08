@@ -1,5 +1,5 @@
 // Header file for Game class
-
+#pragma once
 #include <string>
 
 using namespace std;
@@ -7,6 +7,7 @@ using namespace std;
 class Game {
 public:
     Game(string title, int releaseDate, float originalPrice);
+    bool operator==(const Game& other) const; // compare games by title
     string getTitle();
     void setTitle(string title);
     int getReleaseDate();
