@@ -22,4 +22,5 @@ public:
 private:
     float budget;
     string name;
+    list<Game> games;
 };
